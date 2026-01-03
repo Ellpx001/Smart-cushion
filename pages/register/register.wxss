@@ -1,0 +1,75 @@
+/* pages/register/register.wxss */
+/* 保持和登录页一致的背景 */
+page {
+  background-color: #f5f7fa;
+  height: 100%;
+}
+
+/* 容器样式 */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80rpx; /* 距离顶部距离 */
+  box-sizing: border-box;
+}
+
+/* 标题样式 */
+.title {
+  font-size: 42rpx;
+  font-weight: bold;
+  color: #000428;
+  margin-bottom: 60rpx;
+  letter-spacing: 2rpx;
+}
+
+/* 表单区域 */
+.form-area {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 输入框外层容器 */
+.input-group {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 12rpx;
+  padding: 20rpx 30rpx;
+  margin-bottom: 30rpx;
+}
+
+/* 阴影效果 */
+.shadow-box {
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.08);
+}
+
+/* 🌟🌟🌟 重点在这里：限制图标大小 🌟🌟🌟 */
+.icon {
+  width: 40rpx;  /* 宽度固定为 40 */
+  height: 40rpx; /* 高度固定为 40 */
+  margin-right: 20rpx; /* 和输入框的间距 */
+  opacity: 0.8; /* 稍微透明一点 */
+}
+
+/* 输入框本体 */
+.input {
+  flex: 1;
+  font-size: 30rpx;
+  color: #333;
+}
+
+/* 注册按钮 */
+.login-btn {
+  background-color: #000428;
+  color: white;
+  border-radius: 12rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+  width: 100% !important;
+  margin-top: 30rpx;
+  padding: 20rpx 0;
+  letter-spacing: 4rpx;
+}
+.login-btn:active { opacity: 0.9; }
