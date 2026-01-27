@@ -1,0 +1,57 @@
+<view class="record-page">
+  <view class="header">
+    <view class="page-title">我的坐姿记录</view>
+    <view class="time-switch">
+      <button class="time-btn {{currentTime === 'day' ? 'active' : ''}}" bindtap="switchTime" data-type="day">今日</button>
+      <button class="time-btn {{currentTime === 'week' ? 'active' : ''}}" bindtap="switchTime" data-type="week">本周</button>
+      <button class="time-btn {{currentTime === 'month' ? 'active' : ''}}" bindtap="switchTime" data-type="month">本月</button>
+    </view>
+  </view>
+
+  <!-- 恢复饼状图区域（关键：保留canvas-id和样式类） -->
+  <view class="chart-container">
+    <canvas canvas-id="postureChart" class="chart-canvas"></canvas>
+  </view>
+
+  <view class="stats-container">
+    <view class="stat-card correct">
+      <view class="stat-icon">✅</view>
+      <view class="stat-info">
+        <text class="stat-text">坐姿端正</text>
+        <text class="stat-time">{{stats.correct}} 分钟 ({{statsRatio.correct}})</text>
+      </view>
+    </view>
+    <view class="stat-card forward">
+      <view class="stat-icon">⬆️</view>
+      <view class="stat-info">
+        <text class="stat-text">坐姿偏前</text>
+        <text class="stat-time">{{stats.forward}} 分钟 ({{statsRatio.forward}})</text>
+      </view>
+    </view>
+    <view class="stat-card backward">
+      <view class="stat-icon">⬇️</view>
+      <view class="stat-info">
+        <text class="stat-text">坐姿偏后</text>
+        <text class="stat-time">{{stats.backward}} 分钟 ({{statsRatio.backward}})</text>
+      </view>
+    </view>
+    <view class="stat-card left">
+      <view class="stat-icon">⬅️</view>
+      <view class="stat-info">
+        <text class="stat-text">坐姿左倾</text>
+        <text class="stat-time">{{stats.left}} 分钟 ({{statsRatio.left}})</text>
+      </view>
+    </view>
+    <view class="stat-card right">
+      <view class="stat-icon">➡️</view>
+      <view class="stat-info">
+        <text class="stat-text">坐姿右倾</text>
+        <text class="stat-time">{{stats.right}} 分钟 ({{statsRatio.right}})</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="export-area">
+    <button class="export-btn" bindtap="exportData">导出数据</button>
+  </view>
+</view>

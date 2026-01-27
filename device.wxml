@@ -1,0 +1,72 @@
+<view class="device-page">
+  <!-- 页面标题 -->
+  <view class="page-title">设备管理</view>
+
+  <!-- 蓝牙状态 -->
+  <view class="bluetooth-status">
+    <text class="status-icon">{{bluetoothState ? '✅' : '❌'}}</text>
+    <text class="status-text">{{bluetoothState ? '蓝牙已开启' : '蓝牙未开启'}}</text>
+    <button 
+      class="status-btn" 
+      bindtap="toggleBluetooth"
+      wx:if="{{!bluetoothState}}"
+    >
+      开启蓝牙
+    </button>
+  </view>
+
+  <!-- 已绑定设备 -->
+  <view class="device-list" wx:if="{{bindedDevices.length > 0}}">
+    <view class="list-title">已绑定设备</view>
+    <view class="device-item" wx:for="{{bindedDevices}}" wx:key="deviceId">
+      <view class="device-info">
+        <text class="device-name">{{item.name}}</text>
+        <text class="device-status">{{item.connected ? '已连接' : '未连接'}}</text>
+      </view>
+      <button 
+        class="connect-btn" 
+        bindtap="connectDevice"
+        data-deviceid="{{item.deviceId}}"
+        wx:if="{{!item.connected}}"
+      >
+        连接
+      </button>
+      <button 
+        class="unbind-btn" 
+        bindtap="unbindDevice"
+        data-deviceid="{{item.deviceId}}"
+      >
+        解绑
+      </button>
+    </view>
+  </view>
+
+  <!-- 搜索设备按钮 -->
+  <view class="operate-area">
+    <button 
+      class="search-btn" 
+      bindtap="searchDevice"
+      wx:if="{{bluetoothState}}"
+    >
+      {{searching ? '正在搜索...' : '搜索新设备'}}
+    </button>
+  </view>
+
+  <!-- 搜索结果 -->
+  <view class="search-result" wx:if="{{searchedDevices.length > 0 && !searching}}">
+    <view class="list-title">可绑定设备</view>
+    <view class="device-item" wx:for="{{searchedDevices}}" wx:key="deviceId">
+      <view class="device-info">
+        <text class="device-name">{{item.name || '未知设备'}}</text>
+        <text class="device-signal">信号：{{item.RSSI}}dBm</text>
+      </view>
+      <button 
+        class="bind-btn" 
+        bindtap="bindDevice"
+        data-device="{{item}}"
+      >
+        绑定
+      </button>
+    </view>
+  </view>
+</view>

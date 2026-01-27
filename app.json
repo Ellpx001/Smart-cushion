@@ -1,14 +1,40 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/register/register" 
+    "pages/register/register",
+    "pages/monitor/monitor",
+    "pages/userModel/userModel",
+    "pages/record/record",
+    "pages/profile/profile",
+    "pages/remind/remind",
+    "pages/device/device",
+    "pages/help/help",
+    "pages/setting/setting"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "智能坐姿监测系统",
     "navigationBarTextStyle": "black"
   },
-  "style": "v2",
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#3498db",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/monitor/monitor",
+        "text": "监测"
+      },
+      {
+        "pagePath": "pages/record/record",
+        "text": "记录"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的"
+      }
+    ]
+  },
   "sitemapLocation": "sitemap.json"
 }

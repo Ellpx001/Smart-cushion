@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="header-area">
+    <text class="title">智能坐姿监测</text>
+    
+    <image class="center-logo" src="/images/logo.png" mode="aspectFit"></image>
+  </view>
+
+  <view class="form-area">
+    <view class="input-group shadow-box">
+      <image class="icon" src="/images/user.png" mode="aspectFit"></image>
+      <input class="input" type="text" placeholder="请输入账号" bindinput="handleAccountInput"/>
+    </view>
+
+    <view class="input-group shadow-box">
+      <image class="icon" src="/images/lock.png" mode="aspectFit"></image>
+      <input class="input" type="password" placeholder="请输入密码" bindinput="handlePasswordInput"/>
+    </view>
+
+    <view class="forgot-pwd" bindtap="onForgotPwd">
+      <text>忘记密码?</text>
+    </view>
+
+    <button class="login-btn shadow-box" bindtap="onLogin">登 录</button>
+
+    <view class="register-link" bindtap="onRegister" style="padding: 20rpx;">
+      <text>注册账号</text>
+    </view>
+
+  </view>
+</view>

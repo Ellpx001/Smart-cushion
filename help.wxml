@@ -1,0 +1,106 @@
+<view class="help-page">
+  <!-- 页面标题 -->
+  <view class="page-title">帮助中心</view>
+
+  <!-- 常见问题 -->
+  <view class="faq-section">
+    <view class="section-title">常见问题</view>
+    <view class="faq-list">
+      <view class="faq-item" bindtap="toggleFaq" data-index="0">
+        <view class="faq-question">
+          <text>为什么无法搜索到设备？</text>
+          <text class="arrow">{{faqOpen[0] ? '▲' : '▼'}}</text>
+        </view>
+        <view class="faq-answer" wx:if="{{faqOpen[0]}}">
+          1. 请确保设备已开机并处于可连接状态；
+          2. 请检查手机蓝牙是否已开启；
+          3. 请确保设备与手机距离在10米以内；
+          4. 请确认设备未被其他设备绑定。
+        </view>
+      </view>
+
+      <view class="faq-item" bindtap="toggleFaq" data-index="1">
+        <view class="faq-question">
+          <text>为什么坐姿数据不更新？</text>
+          <text class="arrow">{{faqOpen[1] ? '▲' : '▼'}}</text>
+        </view>
+        <view class="faq-answer" wx:if="{{faqOpen[1]}}">
+          1. 请检查设备是否与手机正常连接；
+          2. 请确认已开启每日监测时段；
+          3. 请检查设备电量是否充足；
+          4. 重启设备后重新连接。
+        </view>
+      </view>
+
+      <view class="faq-item" bindtap="toggleFaq" data-index="2">
+        <view class="faq-question">
+          <text>如何关闭提醒功能？</text>
+          <text class="arrow">{{faqOpen[2] ? '▲' : '▼'}}</text>
+        </view>
+        <view class="faq-answer" wx:if="{{faqOpen[2]}}">
+          1. 进入「个人中心」→「提醒设置」；
+          2. 将提醒阈值设置为30秒（最大值）；
+          3. 或在设备管理中断开设备连接。
+        </view>
+      </view>
+
+      <view class="faq-item" bindtap="toggleFaq" data-index="3">
+        <view class="faq-question">
+          <text>数据可以导出吗？</text>
+          <text class="arrow">{{faqOpen[3] ? '▲' : '▼'}}</text>
+        </view>
+        <view class="faq-answer" wx:if="{{faqOpen[3]}}">
+          可以导出数据。进入「我的记录」页面，点击右上角「导出」按钮，可将数据导出为Excel格式保存到手机。
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 使用教程 -->
+  <view class="tutorial-section">
+    <view class="section-title">使用教程</view>
+    <view class="tutorial-list">
+      <view class="tutorial-item" bindtap="openTutorial">
+        <view class="tutorial-icon">📱</view>
+        <view class="tutorial-info">
+          <text class="tutorial-title">设备绑定教程</text>
+          <text class="tutorial-desc">详细讲解如何绑定蓝牙设备</text>
+        </view>
+      </view>
+      <view class="tutorial-item" bindtap="openTutorial">
+        <view class="tutorial-icon">📊</view>
+        <view class="tutorial-info">
+          <text class="tutorial-title">数据查看教程</text>
+          <text class="tutorial-desc">如何查看每日/每周坐姿数据</text>
+        </view>
+      </view>
+      <view class="tutorial-item" bindtap="openTutorial">
+        <view class="tutorial-icon">🔔</view>
+        <view class="tutorial-info">
+          <text class="tutorial-title">提醒设置教程</text>
+          <text class="tutorial-desc">自定义坐姿提醒规则</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 联系客服 -->
+  <view class="contact-section">
+    <view class="section-title">联系我们</view>
+    <view class="contact-card">
+      <view class="contact-item">
+        <text class="contact-label">客服电话：</text>
+        <text class="contact-value">400-123-4567</text>
+      </view>
+      <view class="contact-item">
+        <text class="contact-label">客服微信：</text>
+        <text class="contact-value">zuozhi123456</text>
+      </view>
+      <view class="contact-item">
+        <text class="contact-label">工作时间：</text>
+        <text class="contact-value">9:00-18:00（节假日除外）</text>
+      </view>
+      <button class="contact-btn" bindtap="contactService">在线咨询</button>
+    </view>
+  </view>
+</view>
