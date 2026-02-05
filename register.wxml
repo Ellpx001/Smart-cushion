@@ -1,0 +1,24 @@
+<view class="container">
+  <view class="header">
+    <text class="title">注册新账号</text>
+  </view>
+
+  <view class="form-area">
+    <view class="input-group shadow-box">
+      <image class="icon" src="/images/user.png" mode="aspectFit"></image>
+      <input class="input" type="text" placeholder="请设置账号" bindinput="handleAccountInput"/>
+    </view>
+
+    <view class="input-group shadow-box">
+      <image class="icon" src="/images/lock.png" mode="aspectFit"></image>
+      <input class="input" type="password" placeholder="请设置密码" bindinput="handlePasswordInput"/>
+    </view>
+
+    <view class="input-group shadow-box">
+      <image class="icon" src="/images/lock.png" mode="aspectFit"></image>
+      <input class="input" type="password" placeholder="请再次输入密码" bindinput="handleConfirmPasswordInput"/>
+    </view>
+
+    <button class="login-btn shadow-box" bindtap="onRegister">立即注册</button>
+  </view>
+</view>

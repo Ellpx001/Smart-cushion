@@ -1,0 +1,38 @@
+<view class="monitor-page">
+  <!-- 顶部栏：蓝牙状态+连接按钮/设置 -->
+  <view class="top-bar">
+    <image class="bluetooth-icon" src="../../images/bluetooth.png" mode="widthFix"/>
+    <text class="bluetooth-status">蓝牙：{{bluetoothStatus}}</text>
+    <!-- 修复：变量名匹配js中的isConnected -->
+    <button class="connect-btn" bindtap="connectBluetooth" wx:if="{{!isConnected}}">连接蓝牙</button>
+    <text class="setting-btn" wx:else>设置</text>
+  </view>
+
+  <!-- 坐姿动态图区域（关键：改用相对路径适配你的目录） -->
+  <view class="posture-container">
+    <image class="posture-img" src="../../images/posture-tilt.gif" mode="widthFix"/>
+  </view>
+
+  <!-- 趋势图区域（同步改相对路径） -->
+  <view class="chart-area">
+    <image class="chart-img" src="../../images/chart-line.png" mode="widthFix"/>
+  </view>
+
+  <!-- 坐姿状态区域（去掉数字18，动态显示提示） -->
+  <view class="status-area">
+    <text class="time-text">监测时长：{{monitorTime}}</text>
+    <text class="posture-desc">当前坐姿：{{tip || '正坐'}}</text>
+  </view>
+
+  <!-- 语音提醒开关 -->
+  <view class="remind-area">
+    <text class="remind-text">语音提醒：开启</text>
+    <switch class="remind-switch" checked/>
+  </view>
+
+  <!-- 操作按钮区域（绑定计时事件） -->
+  <view class="btn-area">
+    <button class="pause-btn" bindtap="pauseMonitor">暂停监测</button>
+    <button class="end-btn" bindtap="endMonitor">结束监测</button>
+  </view>
+</view>

@@ -1,0 +1,59 @@
+/* pages/setting/setting.wxss */
+.setting-page {
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  padding: 30rpx 20rpx;
+}
+
+.page-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+
+.setting-section {
+  margin-bottom: 30rpx;
+}
+
+.section-title {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20rpx;
+  padding: 0 10rpx;
+}
+
+.setting-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 24rpx;
+  border-radius: 16rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0,0,0,0.05);
+  margin-bottom: 10rpx;
+}
+
+.setting-icon {
+  font-size: 32rpx;
+  margin-right: 20rpx;
+  width: 40rpx;
+  text-align: center;
+}
+
+.setting-text {
+  flex: 1;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.arrow {
+  font-size: 24rpx;
+  color: #ccc;
+}
+
+.version {
+  font-size: 24rpx;
+  color: #999;
+}

@@ -1,0 +1,123 @@
+/* pages/monitor/monitor.wxss */
+/* 页面整体 */
+.monitor-page {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  padding: 20rpx;
+}
+
+/* 顶部栏 */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10rpx 0;
+  gap: 10rpx;
+}
+.bluetooth-icon {
+  width: 30rpx;
+  height: 30rpx;
+}
+.bluetooth-status {
+  font-size: 26rpx;
+  color: #333;
+  margin-right: auto;
+}
+/* 蓝牙连接按钮样式 */
+.connect-btn {
+  font-size: 26rpx;
+  color: #fff;
+  background-color: #1890ff;
+  padding: 6rpx 14rpx;
+  border-radius: 8rpx;
+  border: none;
+}
+.setting-btn {
+  font-size: 26rpx;
+  color: #666;
+  padding: 6rpx 14rpx;
+  border-radius: 8rpx;
+  border: 1rpx solid #eee;
+}
+
+/* 坐姿图容器（GIF适配） */
+.posture-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20rpx 0;
+}
+.posture-img {
+  width: 60%;
+  display: block;
+}
+
+/* 趋势图 */
+.chart-area {
+  margin: 10rpx 0;
+}
+.chart-img {
+  width: 100%;
+  height: 120rpx;
+  object-fit: contain;
+}
+
+/* 状态区域（去掉数字18对应的样式） */
+.status-area {
+  text-align: center;
+  margin: 20rpx 0;
+  line-height: 40rpx;
+}
+.time-text {
+  font-size: 26rpx;
+  color: #666;
+  display: block;
+}
+.posture-desc {
+  font-size: 36rpx;
+  color: #333;
+  font-weight: 500;
+}
+
+/* 语音提醒 */
+.remind-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20rpx 0;
+}
+.remind-text {
+  font-size: 28rpx;
+  color: #666;
+  margin-right: 20rpx;
+}
+.remind-switch {
+  transform: scale(0.8);
+}
+
+/* 按钮区域 */
+.btn-area {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 0;
+}
+.pause-btn {
+  width: 48%;
+  height: 90rpx;
+  line-height: 90rpx;
+  background-color: #ff4d4f;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 12rpx;
+  border: none;
+}
+.end-btn {
+  width: 48%;
+  height: 90rpx;
+  line-height: 90rpx;
+  background-color: #52c41a;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 12rpx;
+  border: none;
+}

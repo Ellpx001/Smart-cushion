@@ -1,0 +1,147 @@
+/* pages/profile/profile.wxss */
+/* 页面整体 */
+.profile-page {
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  padding: 0 20rpx 40rpx;
+}
+
+/* 顶部个人信息区 */
+.profile-header {
+  display: flex;
+  align-items: center;
+  padding: 40rpx 20rpx;
+  background-color: #fff;
+  border-radius: 0 0 24rpx 24rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0,0,0,0.05);
+}
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+  border: 3rpx solid #e6f7ff;
+}
+.user-info {
+  flex: 1;
+}
+.nickname {
+  display: block;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 6rpx;
+}
+.user-tag {
+  font-size: 24rpx;
+  color: #666;
+}
+.edit-btn {
+  font-size: 26rpx;
+  color: #1890ff;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* 功能模块标题 */
+.section-title {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20rpx;
+  padding: 0 10rpx;
+}
+
+/* 常用功能网格 */
+.function-section {
+  margin-bottom: 30rpx;
+}
+.function-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20rpx;
+}
+.function-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 30rpx 0;
+  border-radius: 16rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0,0,0,0.05);
+}
+.function-icon {
+  font-size: 48rpx;
+  margin-bottom: 12rpx;
+}
+.function-text {
+  font-size: 26rpx;
+  color: #333;
+}
+
+/* 数据统计卡片 */
+.stats-section {
+  margin-bottom: 30rpx;
+}
+.stats-card {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 30rpx 0;
+  border-radius: 16rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0,0,0,0.05);
+}
+.stats-item {
+  text-align: center;
+}
+.stats-value {
+  display: block;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #1890ff;
+  margin-bottom: 6rpx;
+}
+.stats-label {
+  font-size: 24rpx;
+  color: #666;
+}
+
+/* 设置入口 */
+.setting-section {
+  margin-bottom: 40rpx;
+}
+.setting-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 24rpx;
+  border-radius: 16rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0,0,0,0.05);
+}
+.setting-icon {
+  font-size: 32rpx;
+  margin-right: 20rpx;
+}
+.setting-text {
+  flex: 1;
+  font-size: 28rpx;
+  color: #333;
+}
+.arrow {
+  font-size: 24rpx;
+  color: #ccc;
+}
+
+/* 退出登录按钮 */
+.logout-btn {
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  background-color: #fff;
+  color: #ff4d4f;
+  font-size: 32rpx;
+  border: 1rpx solid #ffccc7;
+  border-radius: 12rpx;
+}

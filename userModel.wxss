@@ -1,0 +1,76 @@
+/* pages/userModel/userModel.wxss */
+/* 页面容器：背景淡色+居中布局 */
+.page-container {
+  padding: 30rpx 20rpx;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 装饰图：顶部坐姿线条图 */
+.decorate-img {
+  width: 280rpx;
+  margin: 20rpx 0;
+  opacity: 0.8;
+}
+
+/* 标题区域 */
+.title-area {
+  text-align: center;
+  margin-bottom: 40rpx;
+}
+.title {
+  font-size: 42rpx;
+  font-weight: 600;
+  color: #333;
+}
+.sub-title {
+  font-size: 26rpx;
+  color: #666;
+  margin-top: 10rpx;
+}
+
+/* 输入卡片：白色卡片+阴影 */
+.input-card {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 16rpx;
+  padding: 40rpx 30rpx;
+  box-shadow: 0 4rpx 16rpx rgba(0,0,0,0.05);
+}
+
+/* 输入项布局 */
+.input-item {
+  margin-bottom: 35rpx;
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  font-size: 28rpx;
+  color: #555;
+  margin-bottom: 10rpx;
+}
+.input {
+  height: 80rpx;
+  line-height: 80rpx;
+  border: 2rpx solid #eee;
+  border-radius: 8rpx;
+  padding: 0 20rpx;
+  font-size: 30rpx;
+}
+
+/* 保存按钮：主色+圆角 */
+.save-btn {
+  width: 100%;
+  height: 88rpx;
+  line-height: 88rpx;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 32rpx;
+  font-weight: 500;
+  border-radius: 12rpx;
+  border: none;
+  margin-top: 20rpx;
+}

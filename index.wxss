@@ -1,0 +1,105 @@
+/* pages/index/index.wxss */
+page {
+  background-color: #ffffff;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80rpx; /* 稍微增加一点顶部距离，让整体下移 */
+  box-sizing: border-box;
+}
+
+/* 头部区域容器，确保内部元素居中 */
+.header-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50rpx; /* 头部区域和下方表单的总间距 */
+}
+
+.title {
+  font-size: 46rpx;
+  font-weight: bold;
+  color: #000428;
+  letter-spacing: 7rpx;
+  /* 🌟 新增：给标题下面增加间距，和图片分开 */
+  margin-bottom: 60rpx; 
+}
+
+/* 中心大图的样式 */
+.center-logo {
+  width: 400rpx;  /* 图片宽度 */
+  height: 400rpx; /* 图片高度 */
+  /* 🌟 修改：这里不需要 margin-bottom 了，间距由 title 控制了 */
+}
+
+.form-area {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 输入框容器样式 */
+.input-group {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 12rpx;
+  padding: 20rpx 30rpx;
+  margin-bottom: 40rpx;
+}
+
+/* 通用阴影效果 */
+.shadow-box {
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.08);
+}
+
+/* 输入框左侧小图标 */
+.icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+  opacity: 0.8;
+}
+
+.input {
+  flex: 1;
+  font-size: 30rpx;
+  color: #333;
+}
+
+/* 忘记密码 */
+.forgot-pwd {
+  text-align: right;
+  font-size: 26rpx;
+  color: #000428;
+  margin-bottom: 40rpx;
+  font-weight: 500;
+}
+
+/* 登录按钮 */
+.login-btn {
+  background-color: #000428;
+  color: white;
+  border-radius: 12rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+  width: 100% !important;
+  padding: 20rpx 0;
+  letter-spacing: 4rpx;
+}
+
+.login-btn:active {
+  opacity: 0.9;
+}
+
+/* 注册账号 */
+.register-link {
+  text-align: center;
+  margin-top: 30rpx;
+  color: #000428;
+  font-size: 28rpx;
+}

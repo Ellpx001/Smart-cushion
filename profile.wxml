@@ -1,0 +1,67 @@
+<view class="profile-page">
+  <!-- 顶部个人信息区（修复头像路径为相对路径） -->
+  <view class="profile-header">
+    <image class="avatar" src="../../images/user.png" mode="widthFix"></image>
+    <view class="user-info">
+      <text class="nickname">坐姿守护者</text>
+      <text class="user-tag">已绑定1台设备</text>
+    </view>
+    <button class="edit-btn" bindtap="editProfile">编辑</button>
+  </view>
+
+  <!-- 常用功能入口 -->
+  <view class="function-section">
+    <view class="section-title">常用功能</view>
+    <view class="function-grid">
+      <view class="function-item" bindtap="goToRecord">
+        <view class="function-icon">📊</view>
+        <text class="function-text">我的记录</text>
+      </view>
+      <view class="function-item" bindtap="goToRemind">
+        <view class="function-icon">🔔</view>
+        <text class="function-text">提醒设置</text>
+      </view>
+      <view class="function-item" bindtap="goToDevice">
+        <view class="function-icon">📱</view>
+        <text class="function-text">设备管理</text>
+      </view>
+      <view class="function-item" bindtap="goToHelp">
+        <view class="function-icon">❓</view>
+        <text class="function-text">帮助中心</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 数据统计卡片 -->
+  <view class="stats-section">
+    <view class="section-title">本周数据</view>
+    <view class="stats-card">
+      <view class="stats-item">
+        <text class="stats-value">12.5h</text>
+        <text class="stats-label">总监测时长</text>
+      </view>
+      <view class="stats-item">
+        <text class="stats-value">82%</text>
+        <text class="stats-label">端正率</text>
+      </view>
+      <view class="stats-item">
+        <text class="stats-value">18次</text>
+        <text class="stats-label">提醒次数</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 个人设置入口 -->
+  <view class="setting-section">
+    <view class="setting-item" bindtap="goToSetting">
+      <view class="setting-icon">⚙️</view>
+      <text class="setting-text">个人设置</text>
+      <text class="arrow">></text>
+    </view>
+  </view>
+
+  <!-- 退出登录按钮 -->
+  <view class="logout-section">
+    <button class="logout-btn" bindtap="logout">退出登录</button>
+  </view>
+</view>

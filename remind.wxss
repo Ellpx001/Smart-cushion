@@ -1,0 +1,106 @@
+/* pages/remind/remind.wxss */
+.remind-page {
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  padding: 30rpx 20rpx;
+}
+
+.page-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+
+.setting-card {
+  background-color: #fff;
+  border-radius: 16rpx;
+  padding: 24rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0,0,0,0.05);
+}
+
+.card-title {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+
+/* 滑块区域 */
+.slider-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10rpx;
+}
+
+.slider-label {
+  font-size: 26rpx;
+  color: #1890ff;
+  font-weight: bold;
+}
+
+.tips {
+  font-size: 22rpx;
+  color: #999;
+}
+
+/* 单选框区域 */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16rpx;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  font-size: 26rpx;
+  color: #333;
+}
+
+.radio-item radio {
+  margin-right: 10rpx;
+}
+
+/* 时间选择器 */
+.time-picker-area {
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+.time-item {
+  display: flex;
+  align-items: center;
+}
+
+.time-label {
+  font-size: 26rpx;
+  color: #333;
+  width: 120rpx;
+}
+
+.picker-text {
+  flex: 1;
+  font-size: 26rpx;
+  color: #666;
+  text-align: right;
+}
+
+/* 保存按钮 */
+.save-btn-area {
+  margin-top: 40rpx;
+}
+
+.save-btn {
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  background-color: #1890ff;
+  color: #fff;
+  font-size: 32rpx;
+  border: none;
+  border-radius: 12rpx;
+}

@@ -1,0 +1,77 @@
+<view class="setting-page">
+  <!-- 页面标题 -->
+  <view class="page-title">个人设置</view>
+
+  <!-- 账号安全 -->
+  <view class="setting-section">
+    <view class="section-title">账号安全</view>
+    <view class="setting-item" bindtap="changePassword">
+      <view class="setting-icon">🔒</view>
+      <text class="setting-text">修改密码</text>
+      <text class="arrow">></text>
+    </view>
+    <view class="setting-item" bindtap="bindPhone">
+      <view class="setting-icon">📱</view>
+      <text class="setting-text">绑定手机号</text>
+      <text class="arrow">></text>
+    </view>
+  </view>
+
+  <!-- 通知设置 -->
+  <view class="setting-section">
+    <view class="section-title">通知设置</view>
+    <view class="setting-item">
+      <view class="setting-icon">🔔</view>
+      <text class="setting-text">新消息通知</text>
+      <switch 
+        checked="{{notifySetting.newMessage}}" 
+        bindchange="onNotifyChange" 
+        data-key="newMessage"
+      ></switch>
+    </view>
+    <view class="setting-item">
+      <view class="setting-icon">📊</view>
+      <text class="setting-text">数据周报推送</text>
+      <switch 
+        checked="{{notifySetting.weeklyReport}}" 
+        bindchange="onNotifyChange" 
+        data-key="weeklyReport"
+      ></switch>
+    </view>
+  </view>
+
+  <!-- 数据管理 -->
+  <view class="setting-section">
+    <view class="section-title">数据管理</view>
+    <view class="setting-item" bindtap="clearData">
+      <view class="setting-icon">🗑️</view>
+      <text class="setting-text">清空本地数据</text>
+      <text class="arrow">></text>
+    </view>
+    <view class="setting-item" bindtap="exportAllData">
+      <view class="setting-icon">📤</view>
+      <text class="setting-text">导出全部数据</text>
+      <text class="arrow">></text>
+    </view>
+  </view>
+
+  <!-- 关于我们 -->
+  <view class="setting-section">
+    <view class="section-title">关于我们</view>
+    <view class="setting-item" bindtap="checkVersion">
+      <view class="setting-icon">ℹ️</view>
+      <text class="setting-text">版本信息</text>
+      <text class="version">v1.0.0</text>
+    </view>
+    <view class="setting-item" bindtap="openPrivacy">
+      <view class="setting-icon">📜</view>
+      <text class="setting-text">隐私政策</text>
+      <text class="arrow">></text>
+    </view>
+    <view class="setting-item" bindtap="openUserAgreement">
+      <view class="setting-icon">📄</view>
+      <text class="setting-text">用户协议</text>
+      <text class="arrow">></text>
+    </view>
+  </view>
+</view>

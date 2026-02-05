@@ -1,0 +1,40 @@
+<!--pages/userModel/userModel.wxml-->
+<text>pages/userModel/userModel.wxml</text>
+<view class="page-container">
+  <!-- 顶部装饰图：坐姿线条图 -->
+  <image class="decorate-img" src="/images/posture-line.png" mode="widthFix"></image>
+
+  <!-- 标题区域 -->
+  <view class="title-area">
+    <text class="title">个人模型设置</text>
+    <text class="sub-title">填写身高体重，获取更精准的坐姿监测</text>
+  </view>
+
+  <!-- 输入卡片 -->
+  <view class="input-card">
+    <!-- 身高输入 -->
+    <view class="input-item">
+      <text class="label">身高（cm）</text>
+      <input 
+        class="input" 
+        type="number" 
+        placeholder="请输入身高（如175）" 
+        bindinput="onHeightInput"
+      />
+    </view>
+
+    <!-- 体重输入 -->
+    <view class="input-item">
+      <text class="label">体重（kg）</text>
+      <input 
+        class="input" 
+        type="number" 
+        placeholder="请输入体重（如65）" 
+        bindinput="onWeightInput"
+      />
+    </view>
+
+    <!-- 保存按钮 -->
+    <button class="save-btn" bindtap="saveModel">保存并进入监测</button>
+  </view>
+</view>
